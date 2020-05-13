@@ -1,4 +1,4 @@
-package com.muhammadali.udemy.jetpack.retrofitrxjava.model
+package com.muhammadali.udemy.jetpack.room.model
 
 import io.reactivex.Single
 import retrofit2.http.GET

@@ -1,13 +1,16 @@
-package com.muhammadali.udemy.jetpack.retrofitrxjava.model
+package com.muhammadali.udemy.jetpack.room.model
 
 import android.os.Parcel
 import android.os.Parcelable
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 import com.google.gson.annotations.SerializedName
 
 /**
  * Created by Muhammad Ali on 29-Apr-20.
  * Email muhammad.ali9385@gmail.com
  */
+@Entity
 data class DogBreed(
     @SerializedName("id")
     val id: String? = null,
@@ -30,7 +33,11 @@ data class DogBreed(
         parcel.readString(),
         parcel.readString()
     ) {
+
     }
+
+    @PrimaryKey(autoGenerate = true)
+    var uuid: Int = 0
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
         parcel.writeString(id)

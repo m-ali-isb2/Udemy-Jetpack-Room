@@ -1,4 +1,4 @@
-package com.muhammadali.udemy.jetpack.retrofitrxjava.views
+package com.muhammadali.udemy.jetpack.room.views
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,17 +7,14 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.muhammadali.udemy.jetpack.retrofitrxjava.R
-import com.muhammadali.udemy.jetpack.retrofitrxjava.model.DogBreed
-import com.muhammadali.udemy.jetpack.retrofitrxjava.utils.getProgressDrawable
-import com.muhammadali.udemy.jetpack.retrofitrxjava.utils.loadImage
-import com.muhammadali.udemy.jetpack.retrofitrxjava.viewModel.DetailViewModel
+import com.muhammadali.udemy.jetpack.room.R
+import com.muhammadali.udemy.jetpack.room.model.DogBreed
+import com.muhammadali.udemy.jetpack.room.utils.getProgressDrawable
+import com.muhammadali.udemy.jetpack.room.utils.loadImage
+import com.muhammadali.udemy.jetpack.room.viewModel.DetailViewModel
 import kotlinx.android.synthetic.main.detail_layout.*
 import kotlinx.android.synthetic.main.detail_layout.body
 import kotlinx.android.synthetic.main.detail_layout.name
-import kotlinx.android.synthetic.main.item_dog.*
-import kotlinx.android.synthetic.main.item_dog.view.*
-import kotlinx.android.synthetic.main.item_dog.view.image
 
 
 /**

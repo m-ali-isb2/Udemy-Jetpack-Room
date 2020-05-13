@@ -1,2 +1,2 @@
-rootProject.name='Udemy Jetpack Setup'
+rootProject.name='Udemy Jetpack Room'
 include ':app'

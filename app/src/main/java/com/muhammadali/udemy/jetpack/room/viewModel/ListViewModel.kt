@@ -1,9 +1,9 @@
-package com.muhammadali.udemy.jetpack.retrofitrxjava.viewModel
+package com.muhammadali.udemy.jetpack.room.viewModel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.muhammadali.udemy.jetpack.retrofitrxjava.model.DogBreed
-import com.muhammadali.udemy.jetpack.retrofitrxjava.model.DogsService
+import com.muhammadali.udemy.jetpack.room.model.DogBreed
+import com.muhammadali.udemy.jetpack.room.model.DogsService
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.observers.DisposableSingleObserver

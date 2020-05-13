@@ -1,4 +1,4 @@
-package com.muhammadali.udemy.jetpack.retrofitrxjava.views
+package com.muhammadali.udemy.jetpack.room.views
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -10,9 +10,9 @@ import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.muhammadali.udemy.jetpack.retrofitrxjava.R
-import com.muhammadali.udemy.jetpack.retrofitrxjava.model.DogBreed
-import com.muhammadali.udemy.jetpack.retrofitrxjava.viewModel.ListViewModel
+import com.muhammadali.udemy.jetpack.room.R
+import com.muhammadali.udemy.jetpack.room.model.DogBreed
+import com.muhammadali.udemy.jetpack.room.viewModel.ListViewModel
 import kotlinx.android.synthetic.main.fragment_list.*
 
 

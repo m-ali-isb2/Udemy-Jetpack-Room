@@ -1,4 +1,4 @@
-package com.muhammadali.udemy.jetpack.retrofitrxjava
+package com.muhammadali.udemy.jetpack.room
 
 import org.junit.Test
 

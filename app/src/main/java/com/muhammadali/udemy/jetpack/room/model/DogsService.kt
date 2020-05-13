@@ -1,7 +1,6 @@
-package com.muhammadali.udemy.jetpack.retrofitrxjava.model
+package com.muhammadali.udemy.jetpack.room.model
 
 import io.reactivex.Single
-import io.reactivex.disposables.CompositeDisposable
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
