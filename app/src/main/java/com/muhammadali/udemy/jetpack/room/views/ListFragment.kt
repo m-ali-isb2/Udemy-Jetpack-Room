@@ -46,7 +46,7 @@ class ListFragment : Fragment() {
             dogsList.visibility = GONE
             error.visibility = GONE
             progressBar.visibility = VISIBLE
-            viewModel.refresh()
+            viewModel.refreshBypassCache()
             refresh.isRefreshing = false
         }
 

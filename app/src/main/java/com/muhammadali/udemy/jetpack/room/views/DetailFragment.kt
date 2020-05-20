@@ -22,7 +22,7 @@ import kotlinx.android.synthetic.main.detail_layout.name
  */
 class DetailFragment : Fragment() {
     private lateinit var viewModel: DetailViewModel
-    lateinit var dogBreed: DogBreed
+    private var uuid: Long = 0
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -37,7 +37,7 @@ class DetailFragment : Fragment() {
 
         //retrieving Argument
         arguments?.let {
-            dogBreed = DetailFragmentArgs.fromBundle(it).dogBreed
+            uuid = DetailFragmentArgs.fromBundle(it).uuid
 //            detailText.text = dogUuid.toString()
 
         }
@@ -50,7 +50,7 @@ class DetailFragment : Fragment() {
 //        }
 
         viewModel = ViewModelProvider(this).get(DetailViewModel::class.java)
-        viewModel.setDetails(dogBreed)
+        viewModel.setDetails(uuid)
         observeDetails()
     }
 

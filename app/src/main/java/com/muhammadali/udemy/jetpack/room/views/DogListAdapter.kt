@@ -33,11 +33,16 @@ class DogListAdapter(val dogBreedList: ArrayList<DogBreed>) :
         holder.view.name.text = dogBreedList.get(position).breed
         holder.view.body.text = dogBreedList.get(position).lifespan
         holder.view.setOnClickListener {
+            val action =
+                ListFragmentDirections.actionListFragmentToDetailFragment(dogBreedList[position].uuid.toLong())
             Navigation.findNavController(it)
-                .navigate(ListFragmentDirections.actionListFragmentToDetailFragment(dogBreedList[position]))
+                .navigate(action)
         }
 
-        holder.view.image.loadImage(dogBreedList[position].image, getProgressDrawable(holder.view.image.context))
+        holder.view.image.loadImage(
+            dogBreedList[position].image,
+            getProgressDrawable(holder.view.image.context)
+        )
     }
 
     fun updateDogList(dogBreedList: ArrayList<DogBreed>) {
